@@ -12,7 +12,7 @@ const Advertise = () => {
     },[])
     if(advertise.length < 1){
         return <></>
-    }
+    }   
        
     return (
         <div className='p-10'>
