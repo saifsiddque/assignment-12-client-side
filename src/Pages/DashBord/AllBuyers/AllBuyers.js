@@ -12,7 +12,7 @@ const AllBuyers = () => {
         const agree = window.confirm(`Are you sure , you want to delete ${user.name}`)
         if(agree){
             // console.log('Deleting user with id:', user._id)
-            fetch(`http://localhost:5000/users/${user._id}`,{
+            fetch(`https://assignment12-five.vercel.app/users/${user._id}`,{
                 method: 'DELETE'
             }) 
             .then(res => res.json())

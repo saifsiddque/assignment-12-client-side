@@ -25,7 +25,7 @@ const BookingModal = ({product}) => {
     //     };
         
 
-    //     fetch('http://localhost:5000/bookings', {
+    //     fetch('https://assignment12-five.vercel.app/bookings', {
     //         method: 'POST', 
     //         headers: {
     //           'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const BookingModal = ({product}) => {
             meetingLocation,
         };
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://assignment12-five.vercel.app/bookings', {
             method: 'POST',
             headers:{
                 'content-type' : 'application/json'
@@ -78,7 +78,7 @@ const BookingModal = ({product}) => {
     const handleDelete = product =>{
         const notify = () => toast("'Product Booking Successfully.'");
             // console.log('Deleting user with id:', user._id)
-            fetch(`http://localhost:5000/products/${product._id}`,{
+            fetch(`https://assignment12-five.vercel.app/products/${product._id}`,{
                 method: 'DELETE'
             })
             .then(res => res.json())

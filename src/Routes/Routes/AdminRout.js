@@ -11,7 +11,7 @@ const AdminRout = ({children}) => {
 
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/users?email=${user?.email}`)
+        fetch(`https://assignment12-five.vercel.app/users?email=${user?.email}`)
         .then(res => res.json())
         .then(data=> setusers(data))
     },[user?.email])

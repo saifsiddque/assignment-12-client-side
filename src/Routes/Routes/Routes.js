@@ -33,7 +33,7 @@ const router = createBrowserRouter([
                 path: '/categories/:name',
                 element: <PrivetRout><Products></Products></PrivetRout>,
                 loader:({params}) =>{
-                    return fetch(`http://localhost:5000/products?category=${params.name}`)
+                    return fetch(`https://assignment12-five.vercel.app/products?category=${params.name}`)
                 }
             },
             
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         path:'/dashboard',
         element: <PrivetRout><DashboardLayout></DashboardLayout></PrivetRout>,
         // loader:({params}) =>{
-        //     return fetch(`http://localhost:5000/users?role=${params.role}`)
+        //     return fetch(`https://assignment12-five.vercel.app/users?role=${params.role}`)
         // },
         children: [
             
@@ -51,14 +51,14 @@ const router = createBrowserRouter([
                 path:'/dashboard/allSellers',
                 element:<AllSellers></AllSellers>,
                 loader:() =>{
-                    return fetch(`http://localhost:5000/users?role=seller`)
+                    return fetch(`https://assignment12-five.vercel.app/users?role=seller`)
                 }
             },
             { 
                 path:'/dashboard/allBuyers',
                 element:<AllBuyers></AllBuyers>,
                 loader:() =>{
-                    return fetch(`http://localhost:5000/users?role=buyer`)
+                    return fetch(`https://assignment12-five.vercel.app/users?role=buyer`)
                 }
             },
             { 
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
                 path:'/dashboard/myProduct/:email',
                 element:<MyProducts></MyProducts>,
                 loader:({params}) =>{
-                    return fetch(`http://localhost:5000/products?email=${params.email}`)
+                    return fetch(`https://assignment12-five.vercel.app/products?email=${params.email}`)
                 }
             },
             { 

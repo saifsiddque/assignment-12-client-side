@@ -55,7 +55,7 @@ const SignUp = () => {
 
     const saveUser = (name , email, role ) =>{
         const user = {name , email, role };
-        fetch('http://localhost:5000/users', {
+        fetch('https://assignment12-five.vercel.app/users', {
             method: 'POST',
             headers:{
                 'content-type' : 'application/json'
@@ -69,7 +69,7 @@ const SignUp = () => {
     }
     const googleSaveUser = (name , email ) =>{
         const user = {name , email, role:'buyer' };
-        fetch('http://localhost:5000/users', {
+        fetch('https://assignment12-five.vercel.app/users', {
             method: 'POST',
             headers:{
                 'content-type' : 'application/json'

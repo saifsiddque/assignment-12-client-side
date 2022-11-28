@@ -8,7 +8,7 @@ const AddProduct = () => {
     const handleAddUser = (event) =>{
         event.preventDefault();
         console.log(product);
-        fetch('http://localhost:5000/products', {
+        fetch('https://assignment12-five.vercel.app/products', {
             method: 'POST', 
             headers: {
               'Content-Type': 'application/json',

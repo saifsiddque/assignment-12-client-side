@@ -10,7 +10,7 @@ const MyProducts = () => {
         const agree = window.confirm(`Are you sure , you want to delete this product`)
         if(agree){
             // console.log('Deleting user with id:', user._id)
-            fetch(`http://localhost:5000/products/${product._id}`,{
+            fetch(`https://assignment12-five.vercel.app/products/${product._id}`,{
                 method: 'DELETE'
             })
             .then(res => res.json())
@@ -26,7 +26,7 @@ const MyProducts = () => {
         const agree = window.confirm(`Are you sure , you want to Advertise this product`)
         if(agree){
             // console.log('Deleting user with id:', user._id)
-            fetch(`http://localhost:5000/products/${product._id}`, {
+            fetch(`https://assignment12-five.vercel.app/products/${product._id}`, {
             method: 'PUT',
         })
         .then(res => res.json())
